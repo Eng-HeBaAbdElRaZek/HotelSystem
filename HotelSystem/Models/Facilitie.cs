@@ -1,4 +1,4 @@
-﻿namespace HotelSystem.Data
+﻿namespace HotelSystem.Models
 {
     public class Facilitie
     {
