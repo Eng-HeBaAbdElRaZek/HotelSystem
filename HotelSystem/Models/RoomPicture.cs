@@ -1,11 +1,10 @@
 ﻿namespace HotelSystem.Models
 {
-	public class RoomOffer : BaseModel
+	public class RoomPicture : BaseModel
 	{
 		public int RoomId { get; set; }
 		public Room Room { get; set; }
-		public int OfferId { get; set; }
-		public Offer Offer { get; set; }
+		public string PictureURL { get; set; }
 
 	}
 }

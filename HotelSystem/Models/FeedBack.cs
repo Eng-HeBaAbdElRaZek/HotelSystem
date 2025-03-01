@@ -1,11 +1,12 @@
 ﻿namespace HotelSystem.Models
 {
-    public class FeedBack
-    {
-        public int Id { get; set; }
-        public string Text { get; set; }
-
-        public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
-    }
+	public class FeedBack : BaseModel
+	{
+		public string Review { get; set; }
+		public string StuffResponse { get; set; }
+		public int UserId { get; set; }
+		public User User { get; set; }
+		public int RoomId { get; set; }
+		public Room Room { get; set; }
+	}
 }

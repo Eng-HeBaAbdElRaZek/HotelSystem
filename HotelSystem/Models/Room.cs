@@ -1,16 +1,15 @@
-﻿namespace HotelSystem.Models
+﻿using HotelSystem.Models.Enums;
+
+namespace HotelSystem.Models
 {
-    public class Room
-    {
-        public int Id { get; set; }
-        public Type Type { get; set; }
-        public int Price { get; set; }
-        public string Picture { get; set; }
-
-        public int StaffId { get; set; }
-        public Staff Staff { get; set; }
-        public IList<Facilitie> Facilities { get; set; }
-        public IList<RoomOffer> RoomOffers { get; set; }
-
-    }
+	public class Room : BaseModel
+	{
+		public string Name { get; set; }
+		public RoomType Type { get; set; }
+		public int PricePerNight { get; set; }
+		public ICollection<RoomPicture> RoomPictures { get; set; }
+		public ICollection<RoomFacility> RoomFacilities { get; set; }
+		public ICollection<RoomOffer> RoomOffers { get; set; }
+		public ICollection<Reservation> Reservations { get; set; }
+	}
 }

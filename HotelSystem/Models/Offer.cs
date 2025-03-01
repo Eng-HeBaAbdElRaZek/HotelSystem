@@ -1,14 +1,13 @@
 ﻿namespace HotelSystem.Models
 {
-    public class Offer
-    {
-        public int Id { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public int Discount { get; set; }
+	public class Offer : BaseModel
+	{
 
-        public IList<RoomOffer> RoomOffers { get; set; }
+		public DateTime StartDate { get; set; }
+		public DateTime EndDate { get; set; }
+		public int DiscountPercentage { get; set; }
+		public ICollection<RoomOffer> RoomOffers { get; set; }
 
 
-    }
+	}
 }
