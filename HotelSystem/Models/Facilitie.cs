@@ -1,11 +1,13 @@
 ﻿namespace HotelSystem.Models
 {
-    public class Facilitie
+    public class Facility
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; }     //تكيف ويفاي
 
-        public int RoomId { get; set; }
-        public Room Room { get; set; }
+        public ICollection<RoomFacility> RoomFacilities { get; set; } 
+        
+        //public int RoomId { get; set; }
+        //public Room Room { get; set; }
     }
 }
