@@ -6,6 +6,9 @@ namespace HotelSystem.Data
     public class Context : DbContext
     {
 
+
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data source =.\sqlExpress;initial catalog = ExaminationSystem; integrated security = true; trust server certificate=true")
