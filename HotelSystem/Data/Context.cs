@@ -17,13 +17,16 @@ namespace HotelSystem.Data
 		public DbSet<RoomPicture> RoomPictures { get; set; }
 		public DbSet<User> Users { get; set; }
 		public DbSet<UserRole> UserRoles { get; set; }
+
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(@"Data source =.\sqlExpress;initial catalog = ExaminationSystem; integrated security = true; trust server certificate=true")
+			optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=HotelSystem;Trusted_Connection=True;MultipleActiveResultSets=true")
 				.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
 				.LogTo(log => Debug.WriteLine(log), LogLevel.Information)
 				.EnableSensitiveDataLogging();
+
 		}
+
 
 	}
 }
