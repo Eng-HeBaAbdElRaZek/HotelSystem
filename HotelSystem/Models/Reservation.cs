@@ -1,8 +1,9 @@
-﻿namespace HotelSystem.Models
+﻿using ExaminantionSystem_R3.Models;
+
+namespace HotelSystem.Models
 {
-    public class Reservation
+    public class Reservation: BaseModel
     {
-        public int Id { get; set; }
 
         public DateTime CheckOn { get; set; }
         public DateTime CheckOut { get; set; }

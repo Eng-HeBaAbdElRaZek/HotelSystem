@@ -1,8 +1,9 @@
-﻿namespace HotelSystem.Models
+﻿using ExaminantionSystem_R3.Models;
+
+namespace HotelSystem.Models
 {
-    public class FeedBack
+    public class FeedBack : BaseModel
     {
-        public int Id { get; set; }
         public string Text { get; set; }
 
         public int CustomerId { get; set; }

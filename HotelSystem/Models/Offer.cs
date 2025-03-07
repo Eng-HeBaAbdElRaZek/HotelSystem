@@ -1,8 +1,9 @@
-﻿namespace HotelSystem.Models
+﻿using ExaminantionSystem_R3.Models;
+
+namespace HotelSystem.Models
 {
-    public class Offer
+    public class Offer: BaseModel
     {
-        public int Id { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int Discount { get; set; }

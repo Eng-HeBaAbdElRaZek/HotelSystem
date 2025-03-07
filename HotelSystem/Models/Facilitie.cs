@@ -1,11 +1,12 @@
-﻿namespace HotelSystem.Models
+﻿using ExaminantionSystem_R3.Models;
+
+namespace HotelSystem.Models
 {
-    public class Facilitie
+    public class Facilitie : BaseModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
 
-        public int RoomId { get; set; }
-        public Room Room { get; set; }
+        public IList<RoomFacilitie> Facilities { get; set; }
+
     }
 }

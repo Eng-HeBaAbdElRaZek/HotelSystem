@@ -1,7 +1,11 @@
-﻿namespace HotelSystem.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace HotelSystem.Models
 {
-    public class UserModel
+    public class UserModel :IdentityUser
     {
-        public int Id { get; set; }
+        public bool Deleted { get; set; }
+
+
     }
 }

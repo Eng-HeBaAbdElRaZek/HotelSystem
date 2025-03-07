@@ -1,15 +1,18 @@
-﻿namespace HotelSystem.Models
+﻿using ExaminantionSystem_R3.Models;
+using HotelSystem.Models.Enum;
+
+namespace HotelSystem.Models
 {
-    public class Room
+    public class Room : BaseModel
     {
-        public int Id { get; set; }
-        public Type Type { get; set; }
-        public int Price { get; set; }
-        public string Picture { get; set; }
+        public RoomType Type { get; set; }
+        public int PricePerNight { get; set; }
+        public bool IsAvalible { get; set; }
 
         public int StaffId { get; set; }
         public Staff Staff { get; set; }
-        public IList<Facilitie> Facilities { get; set; }
+        public IList<RoomImage> Images { get; set; }
+        public IList<RoomFacilitie> Facilities { get; set; }
         public IList<RoomOffer> RoomOffers { get; set; }
 
     }
