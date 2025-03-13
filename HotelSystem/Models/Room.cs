@@ -14,6 +14,7 @@ namespace HotelSystem.Models
         public IList<RoomImage> Images { get; set; }
         public IList<RoomFacilitie> Facilities { get; set; }
         public IList<RoomOffer> RoomOffers { get; set; }
+        public IList<Reservation> Reservations { get; set; }
 
     }
 }

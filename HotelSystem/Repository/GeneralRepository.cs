@@ -4,7 +4,6 @@ using HotelSystem.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using NPOI.SS.Formula.Functions;
 
 namespace HotelSystem.Repository
 {
@@ -16,6 +15,10 @@ namespace HotelSystem.Repository
         {    
             _context = context;
             _dbSet = _context.Set<T>();
+        }
+
+        public GeneralRepository()
+        {
         }
 
         public IQueryable<T> GetAll()
