@@ -1,4 +1,4 @@
-﻿namespace ExaminantionSystem_R3.Models
+﻿namespace HotelSystem.Models
 {
     public class BaseModel
     {

@@ -17,6 +17,7 @@ namespace HotelSystem.Data
         public DbSet<RoomImage> RoomImages { get; set; }
         public DbSet<RoomOffer> RoomOffers { get; set; }
         public DbSet<UserModel> Users { get; set; }
+        public DbSet<RoleFeature> RoleFeatures { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

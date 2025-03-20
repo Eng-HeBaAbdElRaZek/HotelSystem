@@ -1,4 +1,4 @@
-﻿using ExaminantionSystem_R3.Models;
+﻿using HotelSystem.Models;
 using HotelSystem.Models.Enum;
 
 namespace HotelSystem.Models

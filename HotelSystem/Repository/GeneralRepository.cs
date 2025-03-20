@@ -1,5 +1,4 @@
-﻿using ExaminantionSystem_R3.Models;
-using HotelSystem.Data;
+﻿using HotelSystem.Data;
 using HotelSystem.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +9,8 @@ namespace HotelSystem.Repository
     public class GeneralRepository<T> where T : BaseModel
     {
         Context _context;
+
+        
         DbSet<T> _dbSet { get; set; }
         public GeneralRepository(Context context)
         {    
@@ -83,6 +84,11 @@ namespace HotelSystem.Repository
                 }
             }
 
+            _context.SaveChanges();
+        }
+
+        internal void SaveChanges()
+        {
             _context.SaveChanges();
         }
     }

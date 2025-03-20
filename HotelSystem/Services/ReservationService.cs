@@ -1,5 +1,5 @@
 ﻿using AutoMapper.QueryableExtensions;
-using HotelSystem.Dto.Reservation;
+using HotelSystem.Dto.Reservations;
 using HotelSystem.Dto.Reservations;
 using HotelSystem.Helpers;
 using HotelSystem.Models;

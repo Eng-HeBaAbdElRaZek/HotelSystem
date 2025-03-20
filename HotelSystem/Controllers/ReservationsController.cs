@@ -1,4 +1,4 @@
-﻿using HotelSystem.Dto.Reservation;
+﻿using HotelSystem.Dto.Reservations;
 using HotelSystem.Helpers;
 using HotelSystem.Models;
 using HotelSystem.Services;

@@ -1,5 +1,5 @@
 using AutoMapper;
-using HotelSystem.Dto.Reservation;
+using HotelSystem.Dto.Reservations;
 using HotelSystem.Dto.Reservations;
 using HotelSystem.Helpers;
 
